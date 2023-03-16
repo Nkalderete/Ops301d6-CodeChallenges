@@ -1,5 +1,5 @@
 #!/bin/bash
-# Nick A- worked with Sierra, Justin H and Geneva
+
 
 
 # Prompt user for doc
