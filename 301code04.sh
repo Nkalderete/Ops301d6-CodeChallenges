@@ -20,7 +20,7 @@ while true; do
             read -p "Press enter to continue"
             ;;
         3)
-            ifconfig
+            ip a 
             read -p "Press enter to continue"
             ;;
         4)
