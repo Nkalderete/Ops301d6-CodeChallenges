@@ -1,24 +1,22 @@
+import os
 
+# Run 'whoami' command and store the output in a variable
+whoami_output = os.popen('whoami').read()
 
-# print current directory
-print ("Current working directory")
+# Run'ip a' command and store the output in a variable
+ip_output = os.popen('ip a').read()
 
+# Run 'lshw -short' command and store the output in a variable
+lshw_output = os.popen('lshw -short').read()
 
-# import os module
-import os 
+# Print the contents of the variables
+print("The output of 'whoami' command is:....")
+print(whoami_output)
 
-# var
-sam= os.system("ls")
-nikoda= os.system("whoami")
-zay= os.system("lshw -short")
+print("The output of 'ip a' command is:....")
+print(ip_output)
 
-
-# execute
-print (sam, nikoda, zay)
-
-
-# print 3x
-print ("this is my final print")
-
+print("The output of 'lshw -short' command is:....")
+print(lshw_output)
 
 
