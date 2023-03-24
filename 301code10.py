@@ -1,13 +1,14 @@
 # Import os module to delete file
 import os
 
-# Open '.txt' file to write 
-# 'with' statement is used to define a context in which a specific action is performed.
+
+# 'with open('...', 'w')' = creates file, opens file, writes in file, closes file.
 with open('TEST.txt', 'w') as f:
 
 
     # Append three lines to file
-    #  f.write() is a method used to write data to a file.
+    #  f.write() used to write data to a file.
+    # '\n' = end of the line/ next write-out is for next line
     f.write('This is the first line.\n')
     f.write('This is the second line.\n')
     f.write('This is the third line.\n')
