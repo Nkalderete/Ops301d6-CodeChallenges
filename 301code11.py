@@ -9,22 +9,23 @@ import psutil
 cpu_times = psutil.cpu_times()
 
 # Extract required information
-user_time = cpu_times.user
-system_time = cpu_times.system
-idle_time = cpu_times.idle
-priority_user_time = cpu_times.nice
-io_wait_time = cpu_times.iowait
-irq_time = cpu_times.irq
-soft_irq_time = cpu_times.softirq
-guest_time = cpu_times.guest
-guest_nice_time = cpu_times.guest_nice
+user_time = psutil.cpu_times().user
+kernel_time = psutil.cpu_times().system
+idle_time = psutil.cpu_times().idle
+priority_user_time = psutil.cpu_times().nice
+io_wait_time = psutil.cpu_times().iowait
+irq_time = psutil.cpu_times().irq
+soft_irq_time = psutil.cpu_times().softirq
+guest_time = psutil.cpu_times().guest
+guest_nice_time = psutil.cpu_times().guest_nice
 
 # Save information to text file
 file_name = "sys_time_info.txt" 
+
 with open(file_name, 'w') as file:
     file.write(f'Time spent by normal processes executing in user mode: {user_time}\n')
     file.write('\n')
-    file.write(f'Time spent by processes executing in kernel mode: {system_time}\n')
+    file.write(f'Time spent by processes executing in kernel mode: {kernel_time}\n')
     file.write('\n')
     file.write(f'Time when system was idle: {idle_time}\n')
     file.write('\n')
