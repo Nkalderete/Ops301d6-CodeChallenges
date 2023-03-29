@@ -1,5 +1,14 @@
 
 
+# Sources: 
+# https://www.w3schools.com/python/python_try_except.asp
+# https://bobbyhadz.com/blog/python-input-yes-no
+# https://www.geeksforgeeks.org/python-requests-tutorial/
+# https://realpython.com/python-requests/
+
+
+
+
 import requests
 
 # prompt user for destination URL and HTTP method
