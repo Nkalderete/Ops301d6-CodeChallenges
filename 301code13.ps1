@@ -9,7 +9,7 @@ $office = "Springfield, OR"
 $company = "Globex USA"
 $department = "TPS"
 $jobtitle = "TPS Reporting Lead"
-$password = "Nikoda125"
+$password = "*********" # REMOVED PW for public GitHub
 
 
 # Create new AD user
